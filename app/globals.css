@@ -6,3 +6,18 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide the standard scrollbar for Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* For Edge and Internet Explorer */
+body {
+  -ms-overflow-style: none;
+}

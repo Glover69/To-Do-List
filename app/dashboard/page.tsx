@@ -11,9 +11,9 @@ const inProgressCards = [
 
 const DashboardScreen: React.FC = () => {
   return (
-    <div className="flex flex-col items-start gap-6 h-full w-full pt-10">
+    <div className="flex flex-col items-start gap-6 w-full pt-10">
        <div className="top-bar w-full h-fit flex flex-row items-center gap-4 p-6">
-        <div className="profile-img rounded-full w-12 h-12 bg-[#D8CFFC]">
+        <div className="profile-img rounded-full w-12 h-12 bg-[#D8CFFC]"> 
 
         </div>
         <div className="text-container flex flex-col items-start">
@@ -22,11 +22,8 @@ const DashboardScreen: React.FC = () => {
         </div>
       </div>
 
-      <div className="main-container-scroll flex flex-col gap-6 items-start h-full w-full overflow-y-scroll overflow-x-hidden">
       <TodayTaskContainer/>    
       <InProgressSection dataArray={inProgressCards}/> 
-      </div>
-      
     </div>
   );
 };

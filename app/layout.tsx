@@ -8,6 +8,7 @@ const lexend = Lexend({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "To-Do Manager",
   description: "To-Do List and Task Manager for your everyday needs",
+  manifest: "/manifest.json",
 };
 
 export default function RootLayout({

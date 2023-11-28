@@ -7,36 +7,6 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const inProgressCards = [
-  {
-    category: "Office Project",
-    icon: "/svgs/briefcase.svg",
-    title: "Grocery shopping app design",
-    progressPercent: 40,
-    bgMain: "#E7F3FF",
-    bgIcon: "#FFE4F2",
-    bgProgress: "#2563EB",
-  },
-  {
-    category: "Personal Project",
-    icon: "/svgs/personal.svg",
-    title: "Uber Eats redesign challenge",
-    progressPercent: 80,
-    bgMain: "#FFE9E1",
-    bgIcon: "#FFE4F2",
-    bgProgress: "#2563EB",
-  },
-  {
-    category: "Daily Study",
-    icon: "/svgs/book.svg",
-    title: "Read a book",
-    progressPercent: 50,
-    bgMain: "#FFD12E",
-    bgIcon: "#FFF6D4",
-    bgProgress: "#2563EB",
-  },
-];
-
 const DashboardScreen: React.FC = () => {
   return (
     <div className="flex flex-col items-start gap-6 w-full pt-10">
@@ -60,9 +30,6 @@ const DashboardScreen: React.FC = () => {
 
       <Categories />
       <Tasks />
-
-      {/* <TodayTaskContainer/>    
-      <InProgressSection dataArray={inProgressCards}/>  */}
 
       {/* <AddTask/> */}
     </div>

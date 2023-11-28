@@ -1,4 +1,7 @@
+import Categories from "../components/dashboard/categories";
 import InProgressSection from "../components/dashboard/inprogress";
+import SearchBar from "../components/dashboard/search-bar";
+import Tasks from "../components/dashboard/tasks";
 import TodayTaskContainer from "../components/dashboard/todaytask";
 import React from "react";
 
@@ -17,13 +20,20 @@ const DashboardScreen: React.FC = () => {
 
         </div>
         <div className="text-container flex flex-col items-start">
-          <span className="text-xs text-[#6E6A7C]">Good morning,</span>
-          <span className="text-xl text-[#24252C] font-semibold">John Appleseed</span>
+          <span className="text-xs text-[#98989F]">Good morning,</span>
+          <span className="text-xl text-white font-semibold">Enam Taylor</span>
         </div>
       </div>
 
-      <TodayTaskContainer/>    
-      <InProgressSection dataArray={inProgressCards}/> 
+      <SearchBar/>
+
+      <Categories/>
+      <Tasks/>
+
+      {/* <TodayTaskContainer/>    
+      <InProgressSection dataArray={inProgressCards}/>  */}
+
+      {/* <AddTask/> */}
     </div>
   );
 };

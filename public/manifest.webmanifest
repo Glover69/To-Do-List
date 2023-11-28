@@ -1,0 +1,16 @@
+{
+    "short_name": "To-Do",
+    "name": "To-Do",
+    "description": "Reminders Application",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "/vercel.svg",
+        "sizes": "192x192",
+        "type": "image/svg"
+      }
+    ]
+  }
+  

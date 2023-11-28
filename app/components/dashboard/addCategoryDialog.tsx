@@ -100,7 +100,6 @@ const AddCategoryDialog: React.FC<CustomDialogProps> = ({
       if (res.ok) {
         console.log(res.body);
         onClose();
-        router.push("/dashboard");
       } else {
         throw new Error("Failed to create category");
       }

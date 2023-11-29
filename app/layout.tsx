@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: "To-Do Manager",
   description: "To-Do List and Task Manager for your everyday needs",
   manifest: "/manifest.json",
+  icons: { apple: '/icon.png'}
 };
 
 export default function RootLayout({

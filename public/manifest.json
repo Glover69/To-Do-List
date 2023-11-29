@@ -1,16 +1,32 @@
 {
-    "short_name": "To-Do",
-    "name": "To-Do",
-    "description": "Reminders Application",
-    "start_url": "/",
+    "theme_color": "#000",
+    "background_color": "#000",
     "display": "standalone",
-    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "name": "To-Do Manager",
+    "short_name": "To-Do",
+    "description": "To-Do List and Task Manager for your everyday needs",
     "icons": [
-      {
-        "src": "/vercel.svg",
-        "sizes": "192x192",
-        "type": "image/svg"
-      }
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
     ]
-  }
-  
+}

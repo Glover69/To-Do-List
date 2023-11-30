@@ -1,15 +1,6 @@
 import { connectDB } from "@/app/lib/database";
 import { categoriesModel } from "@/models/categories";
-import { NextResponse } from "next/server";
-// import Cors from 'micro-cors';
-
-// // Create the CORS middleware
-// const cors = Cors({
-//   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Add the HTTP methods you want to allow
-//   origin: '*', // Change this to the specific origin(s) you want to allow or set it to '*' for any origin
-// });
-
-  
+import { NextResponse } from "next/server";  
 
 
 export async function POST(request: any){

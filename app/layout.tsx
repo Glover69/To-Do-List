@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend, Lexend_Deca } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { NextAuthProvider } from "./provider";
 
 const lexend = Lexend({ subsets: ["latin"] });
 
@@ -19,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={lexend.className}>{children}</body>
+      <body className={lexend.className}>
+        {/* <NextAuthProvider>
+          {children}
+          </NextAuthProvider> */}
+          {children}
+          </body>
     </html>
   );
 }
